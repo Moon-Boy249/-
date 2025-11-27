@@ -4,11 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موقع عدي الشخصي - الأمن السيبراني والتطوير</title>
+    
     <style>
-        css body {    /* التوسيط الرأسي والأفقي */    display: flex;    flex-direction: column;    justify-content: center; /* توسيط رأسي */    align-items: center;     /* توسيط أفقي */    min-height: 100vh; /* اجعل الجسم يغطي كامل ارتفاع الشاشة */    margin: 0; /* إزالة الهوامش الافتراضية */    /* تنسيقات أخرى */    font-family: Arial, sans-serif;    background-color: #f4f4f9;    color: #333;    line-height: 1.6;} .container {    max-width: 800px;    width: 90%; /* إضافة عرض مرن */    background: #fff;    padding: 30px;    border-radius: 8px;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    text-align: center; /* توسيط النص داخل الحاوية */ } h1 {    color: #007bff;    border-bottom: 2px solid #007bff;    padding-bottom: 10px;    width: fit-content; /* جعل الخط لا يمتد لكامل العرض */    margin: 10px auto; /* توسيط العنوان نفسه */ } 
+        /* التعديلات الجديدة للتوسيط وشريط التنقل */
+        body {
+            /* التوسيط الرأسي والأفقي */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* توسيط رأسي للمحتوى */
+            align-items: center;     /* توسيط أفقي للمحتوى */
+            min-height: 100vh; /* اجعل الجسم يغطي كامل ارتفاع الشاشة */
+            margin: 0; /* إزالة الهوامش الافتراضية */
+            /* تنسيقات أخرى */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 60px; /* إضافة مسافة علوية لتجنب اختباء المحتوى تحت شريط التنقل */
+        }
+
+        /* تنسيق شريط التنقل (Nav Bar) */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed; /* لجعل الشريط ثابتاً في الأعلى */
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #007bff;
+        }
+        
+        /* تنسيق الحاوية والمحتوى الداخلي */
+        .container {
+            max-width: 800px;
+            width: 90%; /* إضافة عرض مرن */
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; /* توسيط النص داخل الحاوية */
+        }
+
+        h1 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            width: fit-content; /* جعل الخط لا يمتد لكامل العرض */
+            margin: 10px auto; /* توسيط العنوان نفسه */
+        }
+        
+        .section {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#skills">المهارات</a></li>
+            <li><a href="#projects">المشاريع</a></li>
+            <li><a href="#contact">تواصل</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>مرحباً بك في موقع عدي 👋</h1>
         <p>هذه منصتي الشخصية لمشاركة المعرفة والخبرات في مجال **الأمن السيبراني** وتطوير تطبيقات الويب.</p>
@@ -27,7 +112,7 @@
             <p>
                 للتواصل أو رؤية المزيد من مشاريعه:
                 <br>
-                <a href="https://github.com/odehamd123" target="_blank">ملفي الشخصي على GitHub</a> | 
+                <a href="https://github.com/odehamd123-bit" target="_blank">ملفي الشخصي على GitHub</a> | 
                 <a href="mailto:odehamd123@gmail.com">أرسل لي بريداً إلكترونياً</a>
             </p>
         </div>
