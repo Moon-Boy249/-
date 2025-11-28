@@ -211,6 +211,52 @@
         .social-links {
             margin-top: 5px;
         }
+
+        /* ==================== 6. استعلامات الوسائط (للهواتف والأجهزة الصغيرة) ==================== */
+        @media (max-width: 600px) {
+            
+            /* 1. تنسيق شريط التنقل (Nav Bar) */
+            nav ul {
+                display: flex; 
+                flex-direction: column; /* ترتيب العناصر عمودياً */
+                padding: 5px 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+                display: block; 
+            }
+
+            nav ul li a {
+                padding: 10px;
+                font-size: 16px; 
+                border-radius: 5px; 
+            }
+
+            /* 2. تنسيق الحاوية الرئيسية (Container) */
+            .container {
+                padding: 20px 10px; /* تقليل المسافة الداخلية */
+                width: 95%; /* زيادة العرض لاستغلال مساحة الشاشة */
+            }
+
+            /* 3. تنسيق البطاقات (Skills, Projects, Blog) */
+            .skills-grid, .projects-grid, .blog-grid {
+                grid-template-columns: 1fr; /* عمود واحد فقط */
+                gap: 15px; 
+            }
+            
+            .skill-card, .project-card, .blog-card {
+                border-bottom: none; /* إزالة الخط السفلي السميك */
+                border-left: 5px solid #007bff; /* استبدالها بخط جانبي */
+                border-radius: 8px; /* تقليل استدارة الحواف قليلاً */
+            }
+            
+            .skill-card:hover, .project-card:hover, .blog-card:hover {
+                transform: none; /* إلغاء تأثير الرفع (Hover) على الهاتف */
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* ظل بسيط فقط */
+                border-left-color: #e94560; /* تغيير لون الخط الجانبي عند اللمس */
+            }
+        }
         
     </style>
 </head>
